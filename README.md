@@ -12,17 +12,17 @@
 >  
   
 > ## Dependecies:
-> python 3.9
+> python 3.10
 >
 >  
   
 > ## Issues:
-> not built...
+> [x] kind of built
 >
 >  
   
 > ## Fixes:
-> Must be designed
+> [x] Must be designed
 > 
   
 > ## Versions:
