@@ -55,7 +55,9 @@ class Menu:
         print(menu)
 
     def _get_selection(self, num):
-        # gets user selection and calls run_menu_selection
+        """
+         gets user selection and calls run_menu_selection
+        """
         file_type = 1
 
         try:
