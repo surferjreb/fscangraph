@@ -1,11 +1,11 @@
 # main driver to start program
 
 # menu for program
-from menu import Menu
+from manager import Manager
 
 
 def main():
-    m = Menu()
+    m = Manager()
     m.run_menu()
 
 
