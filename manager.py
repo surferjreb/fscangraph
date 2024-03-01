@@ -16,9 +16,6 @@ class Manager:
         self.data = Data()
         self.menu = Menu()
 
-    def __repr__(self):
-        return "the Manager!"
-
     def run_menu(self):
         """
         Displays title screen, gets menu selection.
@@ -83,6 +80,9 @@ class Manager:
             file_path = Path(new_path)
             fp = FileParser(file_path, file_type)
             self.data.set_data(Data(fp.parse_file()))
+
+    def __repr__(self):
+        return "the Manager!"
 
 
 """
