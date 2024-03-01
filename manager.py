@@ -32,11 +32,11 @@ class Manager:
 
                 self._run_menu_selection(selection)
 
-        except TypeError:
+        except ValueError:
             print('Invalid menu selection, please try again.')
             self.run_menu()
         except Exception:
-            print('Hold On! Things have gone sideways...')
+            print('Hold On! Things have gone sideways...\nMenu failed')
 
     def _run_menu_selection(self, selection):
         """
