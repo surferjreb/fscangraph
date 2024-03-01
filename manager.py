@@ -5,6 +5,7 @@
 """
 
 from pathlib import Path
+from data_operator import DataOperator
 from data import Data
 from menu import Menu
 from file_parser import FileParser
@@ -14,6 +15,7 @@ class Manager:
     def __init__(self):
         self.running = True
         self.data = Data()
+        self.dop = DataOperator(self.data)
         self.menu = Menu()
 
     def run_menu(self):
@@ -59,7 +61,7 @@ class Manager:
                 file_type = selection
             case 4:
                 # TODO: print the file data that is read in
-                print(f'\n{self.data}\n')
+                print(f'\n{self.dop.get_all()}\n')
             case 5:
                 # TODO: output the file data in a format the users requests
                 pass
